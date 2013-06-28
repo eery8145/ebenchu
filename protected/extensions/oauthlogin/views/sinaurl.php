@@ -1,0 +1,1 @@
+<?php echo $this->sina_code_url ?>

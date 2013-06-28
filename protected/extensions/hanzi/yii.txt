@@ -1,0 +1,13 @@
+Yii::import('application.extensions.Hanzi.HanziTools');
+$pzt = new HanziTools();
+
+// prints 'hello world' in Chinese
+echo $hello_world = "世界你好";
+
+
+
+// prints 'hello world' in hanyu pinyin -- shi4 jie4 ni3 hao3 
+echo $got_pinyin = $pzt->pzhanzi_hanzi_to_pinyin($hello_world);
+
+// prints 'hello world' in hanyu pinyin -- sjni
+echo $pzt->getShortPinyin('世界你好');

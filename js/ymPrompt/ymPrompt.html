@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="skin/qq/ymPrompt.css" rel="stylesheet" type="text/css" />
+<script src="ymPrompt.js"></script>
+<title>消息提示组建</title>
+<script>
+///样式有很多种 
+		//skin/black/ymPrompt.css
+		//skin/bluebar/ymPrompt.css
+		//skin/dmm-green/ymPrompt.css
+		//skin/simple/ymPrompt.css
+		//skin/simple_gray/ymPrompt.css
+		//skin/vista/ymPrompt.css
+		//skin/qq/ymPrompt.css
+
+
+
+
+/*默认显示配置及用户当前配置*/
+	/*var dftCfg = {
+		message: '内容',		//消息框内容
+		width: 300,				//消息框宽度
+		height: 185,			//消息框高度
+		title: '温馨提示您',			//消息框标题
+		handler: function() {},	//回调事件，默认空函数
+		maskAlphaColor: '#000',	//遮罩透明色，默认黑色
+		maskAlpha: 0.2,			//遮罩透明度，默认0.1
+		iframe: false,			//iframe模式，默认不是
+		icoCls: '',				//消息框左侧图标，默认无
+		btn: null,				//消息框显示的按钮，默认无
+		autoClose: true,		//点击关闭、确定等按钮是否自动关闭，默认自动关闭
+		fixPosition: true,		//是否随滚动条滚动，默认是
+		dragOut: false,			//是否允许拖出窗口范围，默认不允许
+		titleBar: true,			//是否显示标题栏，默认显示
+		showMask: true,			//是否显示遮罩，默认显示
+		winPos: 'c',			//消息框弹出的位置，默认在页面中间
+		winAlpha: 0.8,			//拖动时消息框的透明度，默认0.8
+		closeBtn: true,			//是否显示关闭按钮，默认显示
+		showShadow: false,		//是否显示消息框的阴影，默认不显示（IE支持）
+		useSlide: false,		//是否启用消息框的淡入淡出效果，默认不启用
+		slideCfg: {				//淡入淡出效果配置，useSlide=true时有效
+			increment: 0.1,		//每次渐变的值，值范围0-1
+			interval: 50		//渐变的速度
+		},
+		closeTxt: '关闭',		//关闭按钮的提示文本
+		okTxt: ' 确 定 ',		//确定按钮的提示文本
+		cancelTxt: ' 取 消 ',	//取消按钮的提示文本
+		msgCls: 'ym-content',	//消息框内容的class名称，用于自定义验尸官，默认为ym-content,仅在iframe:false时有效
+		minBtn: false,			//是否显示最小化按钮，默认不显示
+		minTxt: '最小化',		//最小化按钮的提示文本
+		maxBtn: false,			//是否显示最大化按钮，默认不显示
+		maxTxt: '最大化',		//最大化按钮的提示文本
+		allowSelect:false,		//是否允许选择消息框内容，默认不允许
+		allowRightMenu:false	//是否允许在消息框使用右键，默认不允许
+	}*/
+	
+//总的几个调用方法	
+	//ymPrompt.alert('感叹提示')
+	//ymPrompt.confirmInfo('疑问提示')
+	//ymPrompt.succeedInfo('提示成功')
+	//ymPrompt.errorInfo('错误显示')
+	//ymPrompt.win('文本内容或者内嵌框架的调用')
+	
+	
+
+//删除留言
+function del(id) {
+    ymPrompt.confirmInfo({message:'确定删除吗？',title:'是否删除',handler:function(tp){
+            if(tp=='ok'){
+				 ymPrompt.succeedInfo("ID为："+id+"的数据删除成功!");
+                /*$.post("#",{id:id},function(txt){
+                    if(txt){
+                        succeedInfo("删除成功!");
+                    }else{
+                        errorInfo("删除失败!");
+                    }
+                });*/
+            }
+            if(tp=='cancel'){
+                ymPrompt.close();
+            }
+            if(tp=='close'){
+                ymPrompt.close();
+            }
+        }
+        });
+}
+//内嵌框架
+function getifarm(){
+ ymPrompt.win({message:"路径",width:300,height:150,title:'内嵌框架',iframe:true});	
+}
+</script>
+</head>
+<input name="" type="button"  value="感叹提示" onclick="ymPrompt.alert('感叹提示')" /><br/>
+<input name="" type="button"  value="疑问提示" onclick="ymPrompt.confirmInfo('疑问提示')" /><br/>
+<input name="" type="button"  value="提示成功" onclick="ymPrompt.succeedInfo('提示成功')" /><br/>
+<input name="" type="button"  value="内容显示" onclick="ymPrompt.win('内容显示')" /><br/>
+<input name="" type="button"  value="错误显示" onclick="ymPrompt.errorInfo('错误显示')" /><br/>
+<input name="" type="button"  value="是否删除" onclick="del(1)" /><br/>
+<input name="" type="button"  value="内嵌框架" onclick="getifarm()" /><br/>
+<body>
+</body>
+</html>

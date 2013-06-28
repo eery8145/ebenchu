@@ -1,0 +1,1 @@
+<?php echo $this->qq_code_url ?>

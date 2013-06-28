@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+/*公共样式*/
+body,div,span,p,ul,li,dl,dd,dt,h1,h2,h3,h4,input,b,ol,i,font{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img{ border:0 none;}
+body{font-size:12px; font-family:"宋体";}
+a{color:#666; text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.man{width:950px; margin:0 auto;}
+/*列表左侧区域*/
+.lieb{width:950px; margin-top:20px; display:inline; float:left;}
+.lieb .lieb_l{width:190px; float:left;}
+.lieb .lieb_l p{width:190px; border-bottom:1px #eeeeee solid; height:35px; font-weight:600; line-height:35px; color:#666; font-size:16px; float:left;}
+.lieb .lieb_l ul{width:190px; float:left;}
+.lieb .lieb_l ul li h2{width:190px; border-bottom:1px #eeeeee solid; height:38px; font-weight:100; line-height:38px; font-size:14px; color:#6e3939; float:left;}
+.lieb .lieb_l ul li h2 a{ width:190px; padding-left:5px; float:left;}
+.lieb .lieb_l ul li a:hover{ width:185px; height:36px; line-height:36px; background:#f2f2ec; border-top:1px #FFF solid; border-bottom:1px #FFF solid; color:#6e3939; float:left;}
+.lieb .lieb_2{width:190px; float:left;}
+.lieb .lieb_2 p{width:190px; border-bottom:1px #eeeeee solid; height:35px; font-weight:600; line-height:35px; color:#666; font-size:16px; float:left;}
+.lieb .lieb_2 ul{width:190px; float:left;}
+.lieb .lieb_2 ul li h2{width:190px; border-bottom:1px #eeeeee solid; height:38px; font-weight:100; line-height:38px; font-size:14px; color:#6e3939; float:left;}
+.lieb .lieb_2 ul li h2 a{ width:190px; padding-left:5px; float:left;}
+.lieb .lieb_2 ul li a:hover{ width:185px; height:36px; line-height:36px; background:#f2f2ec; border-top:1px #FFF solid; border-bottom:1px #FFF solid; color:#6e3939; float:left;}
+
+.lieb .lieb_e{width:190px; margin-top:8px; display:inline; float:left;}
+.lieb .lieb_e h3{width:190px; border-bottom:1px #eeeeee solid; height:35px; line-height:35px; color:#666; font-size:16px; float:left;}
+.lieb .lieb_e span{width:190px; margin-top:5px; display:inline; line-height:24px; font-size:12px; color:#666; float:left;}
+.toug{width:70px; height:30px; float:left; background:#825D5B; padding:5px 8px 0px 10px; border-radius:3px; font-size:14px; color:#fff;}
+a:hover.toug{width:70px; height:30px; float:left; background:#9c7674; padding:5px 8px 0px 10px; font-size:14px; color:#fff;}
+.xing{border-bottom:5px solid transparent; border-left:5px #FFF solid; border-top:5px solid transparent; display:inline-block; width:0; font-size:0; height:0; line-height:0; margin-left:15px;}
+
+/*列表右侧区域*/
+.lieb_r{width:750px; float:right;}
+.lieb_r .lieb_ra{}
+.lieb_r .lieb_ra p{ height:35px; line-height:35px; font-weight:600; border-bottom:1px #eeeeee solid; color:#666; font-size:16px;}
+.lieb_r .lieb_rb{ }
+.lieb_r .lieb_rb ul{ margin-top:5px; display:inline; float:left;}
+.lieb_r .lieb_rb ul li{ margin-bottom:10px; float:left; border-bottom:1px #eeeeee solid;}
+.lieb_r .lieb_rb ul li h3{ height:35px; line-height:35px; font-size:16px; font-weight:100; color:#666;}
+.lieb_r .lieb_rb ul li h3 a:hover{ background:none;color:#6e3939;}
+.lieb_r .lieb_rb ul li img{width:120px; height:90px; float:left;}
+.lieb_r .lieb_rb ul li font{width:620px; font-size:12px; color:#666; line-height:24px; }
+.lieb_r .lieb_rb ul li font a:hover{ background:none; color:#6e3939;}
+.lieb_r .lieb_rb ul li p{width:750px; height:25px; line-height:25px; float:left; color:#ccc;}
+.lieb_r .lieb_rb ul li p a:hover{ background:none; color:#fff;}
+
+/*页码区域*/
+.lieb_r .page01{ width:665px; margin:15px 0; display:inline; float:left; overflow:hidden;}
+.lieb_r .page01 ul{width:665px; float:left;}
+.lieb_r .page01 ul li{line-height:32px;float:left;font-size:14px;}
+.lieb_r .page01 ul li a{border:#d4d7de solid 1px;background-color:#fff;display:inline;padding:0px 15px; text-decoration:none;color:#666;float:left; margin-right:10px;}
+.lieb_r .page01 ul li a:hover{color:#6e3939;}
+.lieb_r .page01 ul li a.hover{color:#666;background-color:#e0e0e0;}
+.lieb_r .page01 li.pro_selected a{color:#6e3939;background-color:#9c7674;}
+
+/*内容详情页*/
+.xiangq{width:100%; background: #fff; margin:0 auto; overflow:hidden;}
+.xiangq .xqneir{width:950px; margin:15px auto 0 auto; }
+.xiangq .xqneir_l{width:640px; margin-bottom:40px; display:inline; float:left;}
+.xiangq .xqneir_l h1{font-size:24px; height:45px; line-height:45px; color:#666; margin-bottom:8px; text-align:center; font-family:"微软雅黑";font-weight:300;}
+.xiangq .xqneir_l .div_a{font-size:12px; color:#666; text-align:center; margin-bottom:10px; padding-bottom:10px; border-bottom:1px #dddddd solid; color:#666; clear: both;}
+.xiangq .xqneir_l .div_a a:hover{ background:#9c7674; color:#fff;}
+.xiangq .xqneir_l .div_b{ overflow: hidden; clear: both;}
+.xiangq .xqneir_l .div_b p{line-height:23px; margin-bottom:10px;  text-indent:2em; text-align:justify; font-size:14px; }
+.img_a{padding:0; text-align:center; margin:5px 0; display:block;}
+
+.xiangq .xqneir_l .div_b span{ line-height:35px; text-align:right; border-bottom:1px #ddd dashed; float:right; font-size:12px; color:#666;}
+.xiangq .xqneir_l .div_b span a:hover{background:#9c7674; color:#fff;}
+
+.xiangq .xqneir_l .div_b .botom{width:650px; padding-left:10px; line-height:40px; height:40px; color:#666; font-size:12px; border-bottom:1px #ddd dashed; float:left; text-align:left;}
+.xiangq .xqneir_l .div_b .botom a:hover{background:#9c7674; color:#fff;}
+.xiangq .xqneir_l .div_b .botom .prev{ float:left; width:auto;}
+.xiangq .xqneir_l .div_b .botom .next{ float:right;width:auto; margin-right:20px;}
+.xiangq .xqneir_l .div_b  table{ margin-top:20px; margin-bottom:10px;}
+.xiangq .xqneir_l .div_b  td{ border:#CCC solid 1px ; height:30px; text-align:center}
+
+
+.xiangq .xqneir_r{width:290px; float:right;}
+.xiangq .xqneir_r .ming{padding-bottom:15px; float:left;}
+.xiangq .xqneir_r .ming dl{ height:65px; border-bottom:1px #ddd solid; float:left;}
+.xiangq .xqneir_r .ming dl img{width:47px; height:47px; float:left; overflow:hidden;}
+.xiangq .xqneir_r .ming dl dt{ font-size:14px; padding-bottom:10px; color:#666; float:left; width:130px; margin-left:10px; display:inline;}
+.xiangq .xqneir_r .ming dl dt a:hover{background:#9c7674; color:#fff;}
+.xiangq .xqneir_r .ming dl dd{font-size:12px; color:#666; float:left; width:130px; margin-left:10px; display:inline;}
+
+
+.wztitle{ font-size: 14px; border-bottom: 1px solid #dddddd; padding-bottom: 5px; margin-bottom: 5px;}
+
+.wzlist li{ line-height: 25px; font-size: 12px;}
+
+.gdtitle{ font-size: 14px; border-bottom: 1px solid #dddddd; padding-bottom: 5px; margin-bottom: 5px; padding-top:10px; font-size:12px; color:#999}
+
+.gdlist li{ line-height: 25px; font-size: 12px;}
+
+

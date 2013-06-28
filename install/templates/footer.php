@@ -1,0 +1,1 @@
+<div class="footer"> &copy; 2012-2013 <a href="http://www.ebenchu.com" target="_blank">www.ebenchu.com</a> </div>
